@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/popup.css">
+    <title>T1-Helper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="setting-block">
+            <label for="skipper">Время перемотки:</label>
+            <input type="number" id="skipper" name="skipper" min="10" value="10" step="5">
+        </div>
+
+        <div class="setting-block">
+            <label for="volumeCount">Значение громкости:</label>
+            <input type="number" id="volumeCount" name="volumeCount" min="0" max="1" value="1" step="0.1">
+        </div>
+
+        <button id="saveSetting">Сохранить</button>
+
+        <div class="status-block">
+            <span id="status"></span>
+        </div>
+    </div>
+    <script src="./script/popup.js"></script>
+</body>
+</html>

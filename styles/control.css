@@ -1,0 +1,67 @@
+.download-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.rewind-btn, .forward-btn {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.rewind-btn:hover, .forward-btn:hover {
+    transform: scale(1.1);
+}
+
+.rewind-btn::before,
+.rewind-btn::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background: #1f2d3d;
+    transform-origin: center;
+}
+
+.rewind-btn::before {
+    transform: translate(-6px, -4px) rotate(-45deg);
+}
+
+.rewind-btn::after {
+    transform: translate(-6px, 4px) rotate(45deg);
+}
+
+.forward-btn::before,
+.forward-btn::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background: #1f2d3d;
+    transform-origin: center;
+}
+
+.forward-btn::before {
+    transform: translate(0px, -4px) rotate(45deg);
+}
+
+.forward-btn::after {
+    transform: translate(0px, 4px) rotate(-45deg);
+}
+
+.rewind-btn:active, .forward-btn:active {
+    transform: scale(0.95);
+}
+
